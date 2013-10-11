@@ -280,6 +280,13 @@
 		4D320971180790A900BB8C73 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D320970180790A900BB8C73 /* libwebsockets.a */; };
 		4D320977180790A900BB8C73 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D320976180790A900BB8C73 /* AppDelegate.cpp */; };
 		4D32097A180790A900BB8C73 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D320979180790A900BB8C73 /* HelloWorldScene.cpp */; };
+		4D320981180790CE00BB8C73 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D320980180790CE00BB8C73 /* Default-568h@2x.png */; };
+		4D320983180799FA00BB8C73 /* gandalf.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D320982180799FA00BB8C73 /* gandalf.png */; };
+		4D6EB4971807B2CE008D9479 /* lurtz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D6EB4961807B2CE008D9479 /* lurtz.png */; };
+		4D8B06851807DB1200556B78 /* JStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B06841807DB1200556B78 /* JStar.png */; };
+		4D8B06871807EFC500556B78 /* pew-pew-lei.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B06861807EFC500556B78 /* pew-pew-lei.wav */; };
+		4D8B06891807F13100556B78 /* background-music-aac.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B06881807F13100556B78 /* background-music-aac.wav */; };
+		4D8B068C1807F1D900556B78 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B068A1807F1D800556B78 /* GameOverScene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +880,14 @@
 		4D320976180790A900BB8C73 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		4D320978180790A900BB8C73 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		4D320979180790A900BB8C73 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		4D320980180790CE00BB8C73 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4D320982180799FA00BB8C73 /* gandalf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gandalf.png; sourceTree = "<group>"; };
+		4D6EB4961807B2CE008D9479 /* lurtz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lurtz.png; sourceTree = "<group>"; };
+		4D8B06841807DB1200556B78 /* JStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JStar.png; sourceTree = "<group>"; };
+		4D8B06861807EFC500556B78 /* pew-pew-lei.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pew-pew-lei.wav"; sourceTree = "<group>"; };
+		4D8B06881807F13100556B78 /* background-music-aac.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "background-music-aac.wav"; sourceTree = "<group>"; };
+		4D8B068A1807F1D800556B78 /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverScene.cpp; sourceTree = "<group>"; };
+		4D8B068B1807F1D800556B78 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -900,6 +915,7 @@
 		4D3205C7180790A300BB8C73 = {
 			isa = PBXGroup;
 			children = (
+				4D320980180790CE00BB8C73 /* Default-568h@2x.png */,
 				4D3205E3180790A300BB8C73 /* Coco2d_xDemo */,
 				4D3205D2180790A300BB8C73 /* Frameworks */,
 				4D3205D1180790A300BB8C73 /* Products */,
@@ -944,6 +960,11 @@
 		4D3205E4180790A400BB8C73 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4D8B06881807F13100556B78 /* background-music-aac.wav */,
+				4D8B06861807EFC500556B78 /* pew-pew-lei.wav */,
+				4D8B06841807DB1200556B78 /* JStar.png */,
+				4D6EB4961807B2CE008D9479 /* lurtz.png */,
+				4D320982180799FA00BB8C73 /* gandalf.png */,
 				4D3205E5180790A400BB8C73 /* CloseNormal.png */,
 				4D3205E7180790A400BB8C73 /* CloseSelected.png */,
 				4D3205E9180790A400BB8C73 /* Default.png */,
@@ -2097,6 +2118,8 @@
 				4D320976180790A900BB8C73 /* AppDelegate.cpp */,
 				4D320978180790A900BB8C73 /* HelloWorldScene.h */,
 				4D320979180790A900BB8C73 /* HelloWorldScene.cpp */,
+				4D8B068B1807F1D800556B78 /* GameOverScene.h */,
+				4D8B068A1807F1D800556B78 /* GameOverScene.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2164,6 +2187,12 @@
 				4D3205FA180790A400BB8C73 /* iTunesArtwork in Resources */,
 				4D320699180790A500BB8C73 /* ChangeLog in Resources */,
 				4D32080D180790A700BB8C73 /* project.pbxproj in Resources */,
+				4D320981180790CE00BB8C73 /* Default-568h@2x.png in Resources */,
+				4D320983180799FA00BB8C73 /* gandalf.png in Resources */,
+				4D6EB4971807B2CE008D9479 /* lurtz.png in Resources */,
+				4D8B06851807DB1200556B78 /* JStar.png in Resources */,
+				4D8B06871807EFC500556B78 /* pew-pew-lei.wav in Resources */,
+				4D8B06891807F13100556B78 /* background-music-aac.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2423,6 +2452,7 @@
 				4D320969180790A900BB8C73 /* cpVect.c in Sources */,
 				4D320977180790A900BB8C73 /* AppDelegate.cpp in Sources */,
 				4D32097A180790A900BB8C73 /* HelloWorldScene.cpp in Sources */,
+				4D8B068C1807F1D900556B78 /* GameOverScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2564,6 +2594,7 @@
 				4D32097F180790A900BB8C73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
