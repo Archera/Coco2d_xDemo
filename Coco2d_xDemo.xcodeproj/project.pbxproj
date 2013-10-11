@@ -2151,6 +2151,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					4D3205CF180790A300BB8C73 = {
+						DevelopmentTeam = 6DAF64FWMM;
+					};
+				};
 			};
 			buildConfigurationList = 4D3205CB180790A300BB8C73 /* Build configuration list for PBXProject "Coco2d_xDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2525,6 +2530,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2543,6 +2550,7 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"Coco2d_xDemo/libs/Chipmunk/include/chipmunk\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2552,6 +2560,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Coco2d_xDemo/Prefix.pch;
@@ -2569,6 +2579,7 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "\"Coco2d_xDemo/libs/Chipmunk/include/chipmunk\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
