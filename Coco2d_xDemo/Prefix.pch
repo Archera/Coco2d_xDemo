@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Coco2d_xDemo' target in the 'Coco2d_xDemo' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
