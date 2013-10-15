@@ -70,9 +70,9 @@ bool HelloWorld::init()
     
     //添加一个label用来记录总共消灭了多少怪物
     this->_countLbl = CCLabelTTF::create("start","Artial", 32);
-    _countLbl->retain();
+    //_countLbl->retain();
     _countLbl->setColor( ccc3(0, 0, 0) );
-    _countLbl->setPosition(ccp(10, 10));
+    _countLbl->setPosition(ccp(30, size.height - 20));
     this->addChild(_countLbl);
 
     // add "HelloWorld" splash screen" 初始化精灵
@@ -87,7 +87,11 @@ bool HelloWorld::init()
     //没1s调用创造敌对精灵的方法
     this->schedule( schedule_selector(HelloWorld::gameLogic), 1.0 );
     
+    //开启屏幕多点触控
     this->setTouchEnabled(true);
+    //开启屏幕单点触控 一定要实现ccTouchBegan方法
+//    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 1, true);
+
     
     //初始化缓存现有的怪物和子弹的数组
     _targets = new CCArray;
@@ -173,7 +177,7 @@ void HelloWorld::ccTouchesEnded(CCSet* touches, CCEvent* event)
     
     location = CCDirector::sharedDirector()->convertToGL(location);
     
-    //设置初始位置的射弹
+    //设置初始位置的射弹，及目标精灵(gandalf.png)的位置
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();
     
     //projectile弹
@@ -188,7 +192,7 @@ void HelloWorld::ccTouchesEnded(CCSet* touches, CCEvent* event)
     int offX = location.x - projectile->getPosition().x;
     int offY = location.y - projectile->getPosition().y;
     
-    //拯救如果我们击落或向后
+    //如果我们向后发射子弹，则直接返回及不能作出向后发射子弹的操作
     if (offX <= 0) return;
     
     this->addChild(projectile);
